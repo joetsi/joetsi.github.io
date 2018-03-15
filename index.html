@@ -9,24 +9,353 @@
     <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <title>J & S</title>
     <link rel="stylesheet" href="css/tachyons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
   </head>
 
   <body class="">
-    <article class="br2 ba dark-gray b--black-10 mv5 w-100 w-40-m w-40-l mw6 center">
-      <img src="img/chateau.jpg" class="db w-100 br2 br--top" alt="cactus">
-      <div class="pa2 ph3-ns pb3-ns">
-        <div class="dt w-100 mt1">
-          <div class="dtc">
-            <h1 class="f5 f4-ns mv0"></h1>
-          </div>
-          <div class="dtc tr">
-            <h2 class="f5 mv0"></h2>
-          </div>
+    <div class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background:url(img/chateau9.jpg) no-repeat center;">
+    <div class="dtc v-mid">
+      <h1 class="f1 f-headline-l fw1 white-90 cardo">Joanne & Simon</h1>
+      <blockquote class="ph0 mh0 measure f1 lh-copy center">
+        <p class="fw1 white-90">August 22nd 2018</p>
+        <p class="f2 white-90">Le vieux château, Vicq-sur-Breuilh</p>
+        <div class="tc pb3">
+          <a class="b link white-90 f4 f3-ns dib mr3" href="#agenda">Agenda</a>
+          <a class="b link white-90 f4 f3-ns dib mr3" href="#rsvp">RSVP</a>
+          <a class="b link white-90 f4 f3-ns dib mr3" href="#travel">Travel</a>
+          <a class="b link white-90 f4 f3-ns dib mr3" href="#accommodation">Accommodation</a>
+          <a class="b link white-90 f4 f3-ns dib mr3" href="#visit">Visit</a>
         </div>
-        <p class="f6 lh-copy measure mt2 mid-gray">
-When you get to the Gard du Nord, say "Où est le château s'il vous plaît?"
-        </p>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="center measure-wide f5 pt5 lh-copy ph2">
+    <h1 class="f1 lh-title tc" id="agenda">Agenda</h1>
+    <p>
+      As many of you know,
+      we’re going to be sorting the "official" side of things in the UK in July,
+      so France will be the after-party (AKA the fun bit)!
+    </p>
+    <h2>Plan for the day:</h2>
+    <ul>
+      <li class="pb3"><b>15:00</b> – Arrive. Drinks and canapés.</li>
+      <li class="pb3"><b>16:00</b> – Mingle/explore/garden games</li>
+      <li class="pb3"><b>18:00</b> – Group photo</li>
+      <li class="pb3"><b>18:30</b> – Dinner</li>
+      <li class="pb3"><b>20:00</b> – PARTY</li>
+    </ul>
+  </div>
+
+  <div class="w-100 bg-lightest-blue center f5 pt5 lh-copy ph2">
+    <h1 class="f1 lh-title tc" id="rsvp">RSVP by 30th April</h1>
+    <form class="pa4 black-80" id="gform" method="POST"
+    action="https://script.google.com/macros/s/AKfycbxTwAZDRG4MNdoJkDnMH5pKS0DcrFQi0DST9Lsg8MYCoA9g9v8/exec">
+      <div class="measure center">
+        <label for="name" class="f6 b db mb2 mt3">Guest Name(s):</label> <!--<span class="normal black-60">(optional)</span></label> -->
+        <input id="name" name="name" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
+
+        <label for="name" class="f6 b db mb2 mt3">Email:</label>
+        <input id="email" name="email" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="email">
+
+        <label for="name" class="f6 b db mb2 mt3">Response:</label>
+        <textarea id="reply" name="reply" class="input-reset ba b--black-20 pa2 mb2 db w-100"></textarea>
+
+        <label for="name" class="f6 b db mb2 mt3">Dietary Requirements:</label>
+        <textarea id="dietary" name="dietary" class="input-reset ba b--black-20 pa2 mb2 db w-100"></textarea>
+
+        <input class="b ph3 pv2 input-reset ba pointer f6 dib bg-white" type="submit" value="Send">
       </div>
-    </article>
+    </form>
+    <div style="display:none;" id="thankyou_message">
+      <h2><em>Thanks!</em></h2>
+    </div>
+  </div>
+
+  <div class="center f5 pt5 lh-copy ph2">
+    <h1 class="f1 lh-title tc" id="travel">Travel</h1>
+    <iframe class="db center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5059.291515489955!2d1.3827857020154697!3d45.64747742378828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f92896158c12cd%3A0x9d65242e669f8012!2sLe+Vieux+Ch%C3%A2teau%2C+87260+Vicq-sur-Breuilh%2C+France!5e0!3m2!1sen!2suk!4v1520100044869" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="center measure-wide lh-copy pb3">
+      <h2 class="tc">Plane</h2>
+      <p>There are lots of airports within easy travelling distance from the venue.</p>
+      <h2>Limoges Airport (30 minutes’ drive)</h2>
+      <h3>Ryanair</h3>
+      <ul>
+        <li>
+          Leeds Bradford (Thurs & Sun)
+        </li>
+        <li>
+          East Midlands (Tues, Thurs & Sat)
+        </li>
+        <li>
+          Bristol (Mon & Fri)
+        </li>
+        <li>
+          Manchester (Tues, Fri & Sun)
+        </li>
+        <li>
+          London Stansted (Every day)
+        </li>
+      </ul>
+      <h3>British Airways</h3>
+      <ul>
+        <li>
+          London Gatwick (Mon, Thurs, Fri & Sun)
+        </li>
+      </ul>
+      <h3>Flybe</h3>
+      <ul>
+        <li>
+          Southampton (Tues, Thurs & Sat)
+        </li>
+      </ul>
+
+      <h2>Brive Airport (approx. 1 hour drive)</h2>
+      <h3>Ryanair</h3>
+      <ul>
+        <li>
+          London Stansted (Weds & Sat)
+        </li>
+      </ul>
+      <h2>Bergerac Airport (approx. 2 hours’ drive)</h2>
+      <h3>Ryanair</h3>
+      <ul>
+        <li>
+          London Stansted (Every day)
+        </li>
+      </ul>
+      <h3>Flybe</h3>
+      <ul>
+        <li>
+          Southampton (Every day)
+        </li>
+        <li>Birmingham (Mon, Tues, Thurs, Sat & Sun)</li>
+        <li>
+          Exeter (Sat)
+        </li>
+      </ul>
+
+      <h2>Bordeaux & Toulouse airports within 3 hours’ drive also.</h2>
+
+      <p>If you will be flying but are not planning to hire a car,
+        let us know and we will try to connect you up with other guests who may be able to give you a lift!
+      </p>
+
+      <h2 class="tc">Train</h2>
+      <p>
+        There are several small train stations nearby to Vicq sur Breuilh
+        (Pierre-Buffiere, Macganc-Vicq & St Germain les Belles).
+        If you will be taking the train from the UK,
+        you will need to change in Limoges for the regional train:
+        <a href="https://cdn.ter.sncf.com/medias/PDF/nouvelle_aquitaine/Carte_ALPC_TER_2017_40x60_tcm78-165262_tcm78-165261.pdf">TER pdf</a>
+      </p>
+      <p>
+        We would advise checking the timetable here, as they are not very frequent(!): <a href="https://en.oui.sncf/en/">sncf</a>
+      </p>
+
+        <h2 class="tc">Car</h2>
+        <p>
+          The venue is a short drive (10 mins) off the A20 motorway
+           – junction 40 when heading Southbound, junction 41 if heading Northbound.
+        </p>
+        <h3>Any more travel questions, just ask!</h3>
+
+    </div>
+  </div>
+
+  <div class="center measure-wide f5 pv5 lh-copy ph2">
+    <h1 class="f1 lh-title tc" id="accommodation">Accommodation</h1>
+    <p>
+      Unfortunately there is limited accommodation within Vicq sur Breuilh itself,
+      so we would recommend staying in one of the following three nearby villages
+      for the night of the wedding (Pierre-Buffière, Magnac-Bourg or Saint-Germain les Belles).
+    </p>
+
+    <p>
+      Check out the links below for suggestions of where to stay (all sites in English):
+    </p>
+
+    <h2>Pierre-Buffière (accessible by train)</h2>
+    <ul>
+      <li>
+        <a href="https://www.chambres-hotes.fr/chambres-hotes_au-coeur-de-demoiselle_pierre-buffiere_47852_en.htm">
+          Au Coeur de Demoiselle, B&B
+        </a>
+      </li>
+
+      <li>
+        <a href="http://www.hotel-limousin.fr/en/rooms/">Logis Auberge Dupuytren, Hotel</a>
+      </li>
+
+      <li>
+        <a href="http://www.hotel-limoges.net/chambres/chambres.html">La Providence, Hotel</a>
+      </li>
+
+      <li>
+        <a href="https://www.campingfrance.com/uk/find-your-campsite/new-aquitaine/haute-vienne/pierre-buffiere/camping-intercommunal-chabanas">
+          Chabanas, campsite
+        </a>
+      </li>
+    </ul>
+
+    <h2>Magnac-Bourg (accessible by train)</h2>
+    <ul>
+      <li>
+        <a href="http://aubergedeletang.com/EN/">Logis Auberge de l’Etang, Hotel</a>
+      </li>
+
+      <li>
+        <a href="https://www.campingfrance.com/uk/find-your-campsite/new-aquitaine/haute-vienne/magnac-bourg/camping-municipal-les-ecureuils">
+          Les ecureuils, Campsite
+        </a>
+      </li>
+    </ul>
+
+  <h2>Saint-Germain les Belles</h2>
+  <ul>
+    <li>
+      <a href="https://www.chambres-hotes.fr/chambres-hotes_chambres-d-hotes-puy-la-brune_chateau-chervix_30023_en.htm">
+        Puy La Brune, B&B
+      </a>
+    </li>
+    <li>
+      <a href="https://www.campingdemontreal.com/">Montreal, Campsite (chalet hire on site also)</a>
+    </li>
+  </ul>
+
+  <p>
+    <b>We are looking into organising a bus that will pick up from each of these villages
+    before the event and do one (or possibly more) drop offs in each at the end of the evening
+    – more details to follow in due course.</b>
+  </p>
+
+  <p>
+    <b>For the more adventurous and budget-conscious among you,
+    you are also welcome to camp FOR FREE on site the night of the wedding!
+    If you are thinking of doing so, please drop us a message/email by 30th April
+    so we can let the venue know how many people are planning to do so.</b>
+  </p>
+
+  <p class="pt3">
+    And for those of you keen to stay longer in the beautiful Limousin area,
+    there are lots of lovely ‘gîtes’ to rent nearby:
+    <ul>
+      <li>
+        <a href="https://en.gites-de-france.com/holiday-rentals-Limousin.html">https://en.gites-de-france.com/holiday-rentals-Limousin.html</a>
+      </li>
+      <li>
+        <a href="https://www.holidayfrancedirect.co.uk/gites-holidays/limousin-holidays/index.htm">https://www.holidayfrancedirect.co.uk/gites-holidays/limousin-holidays/index.htm</a>
+      </li>
+      <li>
+        <a href="http://www.cheznous.com/holiday-cottages-limousin.aspx">http://www.cheznous.com/holiday-cottages-limousin.aspx</a>
+      </li>
+      <li>
+        <a href="http://www.cottages.com/france/limousin">http://www.cottages.com/france/limousin</a>
+      </li>
+      <li>
+        <a href="https://www.gites.co.uk/search/region-limousin">https://www.gites.co.uk/search/region-limousin</a>
+      </li>
+      <li>
+        <a href="https://www.giteslimousin.com/">https://www.giteslimousin.com/</a>
+      </li>
+    </ul>
+  </p>
+</div>
+
+<div class="center f5 pt5 lh-copy ph2 bg-washed-yellow">
+  <div class="measure-wide center">
+      <h1 class="f1 lh-title tc" id="visit">Visit</h1>
+  <p>Why not make it into more of a holiday and visit some of the lovely places nearby…</p>
+  <h2>Less than an hour’s drive</h2>
+
+  <div class="dt mw6 center pt0 pb5">
+    <div class="db dtc-ns v-mid-ns">
+      <img src="img/visit/pont.jpg" alt="Millevaches" class="w-100 mw7 w5-ns" />
+    </div>
+    <div class="db dtc-ns v-mid pr0-ns pl3-ns">
+      <p class="lh-copy">
+        Millevaches National Park (Walking, camping and huge lake (Vassivière) for water sports)
+        <br>
+        <a href="https://www.travelfranceonline.com/plateau-de-millevaches-and-park-limousin/">
+          plateau-de-millevaches-and-park-limousin
+        </a>
+        <br>
+        <a href="http://www.pnr-millevaches.fr/">pnr-millevaches</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="dt mw6 center pt0 pb5">
+    <div class="db dtc-ns v-mid-ns">
+      <img src="img/visit/brantome.jpg" alt="Perigord" class="w-100 mw7 w5-ns" />
+    </div>
+    <div class="db dtc-ns v-mid pr0-ns pl3-ns">
+      <p class="lh-copy">
+        Périgord/Dordogne region (Castles, medieval villages, caves, vineyards, beautiful scenery)
+        <br>
+        <a href="http://us.france.fr/en/discover/dordogne-perigord-0">dordogne-prerigord</a>
+        <br>
+        <a href="https://www.guide-du-perigord.com/en/tourism/information/holidays-in-the-perigord/tourist-offices.html">
+          guide du perigord
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="dt mw6 center pt0 pb5">
+    <div class="db dtc-ns v-mid-ns">
+      <img src="img/visit/limoges.jpg" alt="Perigord" class="w-100 mw7 w5-ns" />
+    </div>
+    <div class="db dtc-ns v-mid pr0-ns pl3-ns">
+      <p class="lh-copy">
+        Limoges (Pretty regional city famous for its porcelain - Musée National Adrien Dubouche worth a visit)
+        <br>
+        <a href="http://www.limoges-tourisme.com/en">limoges-tourisme</a>
+        <br>
+        <a href="http://www.musee-adriendubouche.fr/en">musee-adriendubouche</a>
+      </p>
+    </div>
+  </div>
+
+  <h2>1 - 3 hours’ drive</h2>
+  <ul>
+    <li class="pb3">Auvergne Volcanoes National Park (Impressive scenery, good for hiking)</li>
+    <li class="pb3">Bordeaux (Nice architecture, great wine…)</li>
+    <li class="pb3">
+      Gascon Landes National Park (Beautiful Atlantic beaches, surfing, home of Europe’s largest sand dune!)
+    </li>
+    <li class="pb3">
+      Toulouse (Occupying a special place in our hearts… pretty and unusual (for France) brick architecture, lots of great cafes/bars…)
+    </li>
+    <li class="pb3">
+      Loire-valley castles (Pretend to be a King or Queen for the day)
+    </li>
+  </ul>
+
+  <h2>Further afield</h2>
+  <ul>
+    <li class="pb3">
+      Paris (You’ve heard it all before)
+    </li>
+    <li class="pb3">
+      Montpellier (Pretty city on Mediterranean coast)
+    </li>
+    <li class="pb3">
+      Lyon (France’s third biggest city, gateway to the Alps)
+    </li>
+    <li class="pb3">
+      Cevennes National Park (Rugged scenery and dramatic gorges, great for hiking and canoeing)
+    </li>
+  </ul>
+</div>
+</div>
+
+
+  <script
+    data-cfasync="false"
+    type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+  </script>
   </body>
 </html>
